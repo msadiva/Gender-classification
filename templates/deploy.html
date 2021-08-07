@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {text-align: center; font-size: 40px;}
+p {text-align: center; font-size: 30px;}
+* {  
+    box-sizing: border-box;
+}
+
+        </style>
+    </head>
+    <body style ="background-color:powderblue;">
+        <h1>
+            Gender Classification Model 
+        </h1>
+        <p>Architecture Used - charCNN</p>
+        <div>
+            <form action = "/predict" method = "POST">
+                <label for = "name">Name</label>
+                <textarea name = "name" rows="10" cols="30"></textarea>
+                <br>
+                <input type = "submit" value = "Submit">
+            </form>
+            {{prediction_text}}
+        </div>
+        
+    <img src = "{{url_for('static', filename = 'Gender-Classification.png')}}" style ="width:50%">
+    </body>
+</html>
