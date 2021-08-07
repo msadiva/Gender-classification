@@ -3,5 +3,5 @@ gunicorn==19.9.0
 joblib==0.14.0
 numpy
 cloudpickle>=0.6.0
-tensorflow
+tensorflow-cpu
 
