@@ -5,7 +5,6 @@ import numpy as np
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Dense, Flatten, Embedding, MaxPooling1D, Input, LSTM, Conv1D, Dropout, concatenate
-from sklearn.metrics import f1_score, confusion_matrix
 import pickle
 import flask
 from flask import Flask, jsonify, request
